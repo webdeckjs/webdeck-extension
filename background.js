@@ -1,5 +1,5 @@
 // Request listener
-console.log("hello from background.js");
+console.log("hello from background.js 2");
 chrome.runtime.onMessageExternal.addListener(
   async (request, sender, sendResponse) => {
     console.log("Received message from", sender, request);
@@ -18,7 +18,6 @@ chrome.runtime.onMessageExternal.addListener(
           try {
             const resp = await fetch(url, { method, body, ...options });
             const json = await resp.json();
-            console.log(e);
             sendResponse(json);
           } catch (e) {
             console.log(e);
