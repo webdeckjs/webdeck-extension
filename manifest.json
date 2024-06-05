@@ -1,6 +1,6 @@
 {
   "name": "Webdeck Extension",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "manifest_version": 3,
   "description": "Web deck chrome extension to do even more!",
   "permissions": [],
@@ -15,7 +15,7 @@
     "default_title": "Webdeck Extension"
   },
   "externally_connectable": {
-    "matches": ["https://*.webdeck.org/*"]
+    "matches": ["https://*.webdeck.org/*", "*://localhost/*"]
   },
   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2++boOtHTVAE07iAlDIwDNYxb//IXw2XNgAU03cVf1qIIBvd37YrHlu7jJlGnpRxeQSQLRIvr1x5RtyUt5oJLsBboWPsGIR9V8CdUO20iDL0ttQ12o0L7ig4uQwYR/G7iRWkstva2lFsB7wcjeQiZxVGe9Z4hWNpdSzhH/k5Q4IA7ef1IatsywiFDDWr//khcHd2RBngOxd+legfuM4YYjaLo4NKRIhquzYkZ68MUjQP2oRV6ud95pXTVlsPtoTUHBTjMKF8eQ0fCoaPEvpyNMHqIw2uD8lKA2nirbgq1Y5IBykbw95Q+DiLHyMxFogg+LSMoCsTNXx1K0WXdG+rgQIDAQAB"
 }
