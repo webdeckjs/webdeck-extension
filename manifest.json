@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "manifest_version": 3,
   "description": "Web deck chrome extension to do even more!",
-  "permissions": [],
+  "permissions": ["storage", "tabs", "scripting"],
   "host_permissions": [
     "*://*/*"
   ],
@@ -14,6 +14,13 @@
     "default_popup": "index.html",
     "default_title": "Webdeck Extension"
   },
+  "content_scripts": [
+    {
+      "matches": ["https://*.webdeck.org/*", "*://localhost/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
   "externally_connectable": {
     "matches": ["https://*.webdeck.org/*", "*://localhost/*"]
   },
