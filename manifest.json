@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "manifest_version": 3,
   "description": "Web deck chrome extension to do even more!",
-  "permissions": ["storage", "tabs", "scripting"],
+  "permissions": ["storage"],
   "host_permissions": [
     "*://*/*"
   ],
